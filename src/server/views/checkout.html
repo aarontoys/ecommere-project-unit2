@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout Fine Vine </title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha256-rgHoMgF45/9e2kvxfvR0KarwQNw5CRqgxbrthGpeUuc= sha512-CGGV53FSdrXrjyGCNk04p+xuna3CbE33n773A0EEmqtcN8W3NaFsR0vSQcbll5dpSS90d3i2Zh3jFX/j46hzJA==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="jumbotron headpage">
+        <h1>Fine Vine</h1>
+      </div>
+
+           <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">FINE VINE</a>
+          </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li ><a href="index.html">HOME</a></li>
+
+                      <li class="active"><a href="checkout.html">CHECKOUT</a></li>
+                <li class="dropdown">
+                  <a href="product.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCT <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="product.html">Product Page</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                    <li><a href="product.html">Sale</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://google.com">Google it</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+
+                    <button class="btn cart" type="button">
+                   ITEMS IN THE CART<span class="badge">4</span>
+                  </button>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+
+    <div class="container">
+      <div class="col-md-10 row offset-md-1">
+        <h1>Checkout</h1>
+        <div id="receipt">
+          <h2>Your Purchase</h2>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="info">
+            <div class="shipping pull-left">
+              <h2>Shipping</h2>
+              <form id="shipping">
+
+                <div class="form-group" id="name">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label for="inputFirstName">First Name</label>
+                    <input type="text" class="form-control" name="firstNameShipping" id="firstNameShipping" required autofocus>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control" name="lastNameShipping" id="lastNameShipping" required>
+                  </div>
+                </div>
+
+                <div class="col-md-8">
+                  <label for="inputCompany">Company</label>
+                  <input type="text" class="form-control" id="companyShip" >
+                </div>
+
+                <div class="form-group" id="address">
+                  <div class="col-md-6">
+                    <label for="inputAddress-1">Address 1</label>
+                    <input type="text" class="form-control" name="address1Ship" id="address1Ship" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress-2">Address 2</label>
+                    <input type="text" class="form-control" id="address2Ship"
+                    >
+                  </div>
+                </div>
+                <div class="form-group" >
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="state">
+                    <label>State: <span>*</span></label><br>
+                    <select name="stateShip" class="form-control" id="stateShip" required>
+                      <option value=false>Select State</option>
+                      <option value="AL">AL</option>
+                      <option value="AK">AK</option>
+                      <option value="AZ">AZ</option>
+                      <option value="AR">AR</option>
+                      <option value="CA">CA</option>
+                      <option value="CO">CO</option>
+                      <option value="CT">CT</option>
+                      <option value="DE">DE</option>
+                      <option value="DC">DC</option>
+                      <option value="FL">FL</option>
+                      <option value="GA">GA</option>
+                      <option value="HI">HI</option>
+                      <option value="ID">ID</option>
+                      <option value="IL">IL</option>
+                      <option value="IN">IN</option>
+                      <option value="IA">IA</option>
+                      <option value="KS">KS</option>
+                      <option value="KY">KY</option>
+                      <option value="LA">LA</option>
+                      <option value="ME">ME</option>
+                      <option value="MD">MD</option>
+                      <option value="MA">MA</option>
+                      <option value="MI">MI</option>
+                      <option value="MN">MN</option>
+                      <option value="MS">MS</option>
+                      <option value="MO">MO</option>
+                      <option value="MT">MT</option>
+                      <option value="NE">NE</option>
+                      <option value="NV">NV</option>
+                      <option value="NH">NH</option>
+                      <option value="NJ">NJ</option>
+                      <option value="NM">NM</option>
+                      <option value="NY">NY</option>
+                      <option value="NC">NC</option>
+                      <option value="ND">ND</option>
+                      <option value="OH">OH</option>
+                      <option value="OK">OK</option>
+                      <option value="OR">OR</option>
+                      <option value="PA">PA</option>
+                      <option value="RI">RI</option>
+                      <option value="SC">SC</option>
+                      <option value="SD">SD</option>
+                      <option value="TN">TN</option>
+                      <option value="TX">TX</option>
+                      <option value="UT">UT</option>
+                      <option value="VT">VT</option>
+                      <option value="VA">VA</option>
+                      <option value="WA">WA</option>
+                      <option value="WV">WV</option>
+                      <option value="WI">WI</option>
+                      <option value="WY">WY</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <label for="inputZip">Zip</label>
+                    <input type="number" id="zipShip" name="zipShip" class="form-control" required>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input id="billing-same" type="checkbox">Shipping same as Billing?
+                  </label>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="billing">
+
+            <h2>Billing</h2>
+              <form id="Billing">
+
+                <div class="form-group" id="name">
+                  <div class="col-md-6">
+                    <label for="inputFirstName">First Name</label>
+                    <input type="text" class="form-control" id="firstNameBilling" name="firstNameBilling" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputLastName">Last Name</label>
+                    <input type="text" class="form-control"
+                    name="lastNameBilling" id="lastNameBilling" required>
+                  </div>
+                </div>
+
+                <div class="col-md-10">
+                  <label for="inputCompany">Company</label>
+                  <input type="text" class="form-control" id="companyBill" >
+                </div>
+
+                <div class="form-group" id="address">
+                  <div class="col-md-6">
+                    <label for="inputAddress-1">Address 1</label>
+                    <input type="text" class="form-control" name="address1Bill" id="address1Bill"  required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputAddress-2">Address 2</label>
+                    <input type="text" class="form-control" name="address2Ship" id="address2Ship">
+                  </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                      <label>State: <span>*</span></label><br>
+                      <select name="stateBill" class="form-control" id="stateBill" required>
+                        <option value="n/a">Select State</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                      </select>
+                    </div>
+
+                  <div class="col-md-4 col-sm-6">
+                    <label for="inputZip">Zip</label>
+                    <input type="number" name="zipBill" id="zipBill" class="form-control" required>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="row">
+        <h2 class="left">Credit Card:</h2>
+          <div class="col-md-4">
+            <label for="card-number">Credit Card Number</label>
+            <input class='card-number form-control' value='4242424242424242'><br>
+    ​
+            <label for="card-cvc">CVC</label>
+            <input class='card-cvc form-control' value="123"><br>
+          ​
+            <label for="card-expiry">Exp Date</label>
+            <input class='card-expiry form-control' value="12/2018"><br>
+          ​
+            <button class='order btn btn-primary'>Place Order!</button>
+          </div>
+          <!-- </div> -->
+<!--       </div>
+      </div> -->
+        </div>
+      </div>
+<!--     </div> -->
+
+
+
+
+<footer>
+    <div class="jumbotron">
+    <div class="container">
+    <div class="row"></div>
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Visit Us</h3>
+        <img src="http://www.tipandtrick.net/wp-content/uploads/2013/03/google-maps-no-info-bubble.png" class="img-thumbnail" alt="Cinque Terre" width="304" height="136">
+      </div>
+      <div class="col-md-3">
+        <h3>Section1</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Cras justo odio
+          </a>
+          <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item">Morbi leo risus</a>
+          <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Section2</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+          <span class="glyphicon glyphicon-book"></span>
+            Cras justo odio
+          </a>
+          <a href="#" class="list-group-item">
+          <span class="glyphicon glyphicon-home"></span>
+          Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item">
+          <span class="glyphicon glyphicon-envelope"></span>
+          Morbi leo risus</a>
+          <a href="#" class="list-group-item">
+          <span class="glyphicon glyphicon-print"></span>
+          Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Section3</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item">Cras justo odio</a>
+          <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+          <a href="#" class="list-group-item">Morbi leo risus</a>
+          <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+          <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+  </body>
+</html>

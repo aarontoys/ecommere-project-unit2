@@ -1,8 +1,211 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+.jumbotron {
+  background: url("https://resortsac.com/wp-content/uploads/2014/11/cielo-wine-bar-atlantic-city-header-img-900x357.jpg") ;
+  background-size: 100%;
+  opacity: 0.9;
+  margin-top: 10px;
 }
 
-a {
-  color: #00B7FF;
+
+
+ .headpage{
+   font-size: 60px;
+   text-align: center;
+   background: url("http://coloradowineexperience.com/wp-content/uploads/2015/05/856519-taste-wine-glasses.jpg") no-repeat;
+
+ }
+
+ .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+
+ }
+
+ a .navbar-brand {
+   font-size: 50px;
 }
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar .navbar-collapse li{
+  font-size: 25px;
+}
+
+.badge{
+  margin: 4px;
+}
+
+/* add custom styles */
+form {
+  display: inline-block;
+}
+
+
+
+/*#exampleInputEmail2 {
+  width: 85%;
+}
+
+#sign-up {
+  width: 15%
+}*/
+
+.col-centered {
+    /*display:inline-block;*/
+    float:none;
+    /* reset the text-align */
+    /*text-align:left;*/
+    /* inline-block space fix */
+    /*margin-right:-4px;*/
+    margin: 0 auto;
+}
+
+.carousel{
+  display: block;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+
+input.warning {
+   border-color: rgba(249, 162, 14, 0.7);
+  color: red;
+}
+
+
+.sucka {
+  text-align: center;
+}
+
+.invalidEmail {
+  background-color: red;
+  opacity: .7;
+  color: black;
+}
+
+.carousel-images {
+  position:  relative;
+  height: 300px;
+  
+  margin: 0 10%;
+}
+
+
+.glyphicon-chevron-left {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  font-size: 300%;
+  transform: translate(0, -50%);
+}
+
+.glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  font-size: 300%;
+  transform: translate(0, -50%);
+}
+
+.glyphicon-play {
+  position: absolute;
+  top: 50%;
+  font-size: 500%;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+.glyphicon-pause {
+  position: absolute;
+  top: 50%;
+  font-size: 500%;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+.play-pause {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+  height: 60px;
+  width: 60px;
+}
+
+.glyphicon-forward {
+  position: absolute;
+  top: 50%;
+  font-size: 500%;
+  z-index: 100;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+.forward {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+  height: 60px;
+  width: 60px;
+}
+
+.backward {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+  height: 60px;
+  width: 60px;
+}
+
+.glyphicon-backward {
+  position: absolute;
+  top: 50%;
+  font-size: 500%;
+  z-index: 100;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  opacity: .5;
+}
+
+.carousel-images div[class^="image"] {
+  background-position: 50%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.left {
+  text-align: left;
+}
+
+
+.order {
+  margin-bottom: 20px;
+}
+
+#invoice-buttons{
+  margin-left: 50px;
+}
+
+
+
+
