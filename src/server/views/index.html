@@ -1,15 +1,217 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HomeFineVine</title>
 
-{% block title %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha256-rgHoMgF45/9e2kvxfvR0KarwQNw5CRqgxbrthGpeUuc= sha512-CGGV53FSdrXrjyGCNk04p+xuna3CbE33n773A0EEmqtcN8W3NaFsR0vSQcbll5dpSS90d3i2Zh3jFX/j46hzJA==" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+
+  <header>
+    <div class="jumbotron headpage">
+      <h1>Fine Vine</h1>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">FINE VINE</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="checkout.html">CHECKOUT</a></li>
+            <li class="dropdown">
+              <a href="product.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCT <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="product.html">Product Page</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="product.html">Sale</a></li>
+                <li class="divider"></li>
+                <li><a href="http://google.com">Google it</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <button class="btn cart" type="button">
+               ITEMS IN THE CART<span class="badge">4</span>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+
+  
+
+    
+
+    <div class="carousel">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <div class="play-pause">
+    <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+    </div>
+    <div class="backward">
+      <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+    </div>
+    <div class="forward">
+      <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+    </div>
+   
+      <div class="carousel-images">
+        <!-- <img class="carousel" src="http://placehold.it/1200x300"> -->
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        <h2>Products</h2>
 
 
-{% block content %}
 
-  <div class="container">
+        <div class="col-sm-6 col-md-4">
 
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
 
-  </div>
+          <div class="thumbnail">
+            <img class="featured" src="http://www.winebattles.com/images/botm/botm_red_270x270_1.png" alt="...">
+            <div class="caption">
+              <h4>Special Selection I</h4>
+              <p>$100.00</p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star-empty" aria-hidden="true"></p>
+              <p class="btnContainer"><a href="#" class="btn btn-primary hover" role="button">Buy Now</a> <a href="#" class="btn btn-default hover" role="button">Add to Cart</a></p>
+            </div>
+          </div>
+        </div>
 
-{% endblock %}
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img class="featured" src="http://www.winebattles.com/images/botm/botm_red_270x270_1.png" alt="...">
+            <div class="caption">
+              <h4>Special Selection II</h4>
+              <p>$200.00</p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="btnContainer"><a href="#" class="btn btn-primary hover" role="button">Buy Now</a> <a href="#" class="btn btn-default hover" role="button">Add to Cart</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img class="featured" src="http://www.winebattles.com/images/botm/botm_red_270x270_1.png" alt="...">
+            <div class="caption">
+              <h4>Special Selection III</h4>
+              <p>$300.00</p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="glyphicon glyphicon-star" aria-hidden="true"></p>
+              <p class="btnContainer"><a href="#" class="btn btn-primary hover" role="button">Buy Now</a> <a href="#" class="btn btn-default hover" role="button">Add to Cart</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="well well-lg">
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                  <!-- <span class="input-group-addon"></span> -->
+                <input name="email" type="text" class="form-control" placeholder="Recipient's username" value="test@test.com">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn btn-default">me@example.com</button>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+
+  <footer>
+    <div class="jumbotron">
+    <div class="container">
+    <div class="row"></div>
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Visit Us</h3>
+          <img src="http://www.tipandtrick.net/wp-content/uploads/2013/03/google-maps-no-info-bubble.png" class="img-thumbnail" alt="Cinque Terre" width="304" height="136">
+        </div>
+        <div class="col-md-3">
+          <h3>Section1</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Cras justo odio</a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+
+          </div>
+        </div>
+          <div class="col-md-3">
+            <h3>Section2</h3>
+            <div class="list-group">
+              <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-book"></span>
+                Cras justo odio
+              </a>
+              <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-home"></span>
+              Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-envelope"></span>
+              Morbi leo risus</a>
+              <a href="#" class="list-group-item">
+                <span class="glyphicon glyphicon-print"></span>
+              Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            </div>
+          </div>
+        <div class="col-md-3">
+          <h3>Section3</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item">Cras justo odio</a>
+            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+            <a href="#" class="list-group-item">Morbi leo risus</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+</html>
