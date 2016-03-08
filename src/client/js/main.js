@@ -363,7 +363,7 @@ $(document).on('ready', function() {
       $('form').append('<p>Your credit card was declined. It sucks to be you</p>')
     } else {
       console.log(response.id);
-       window.location = href='invoice.html';
+       window.location = href='/invoice';
     }
   }
 
