@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/product', function(req, res, next) {
+  console.log('yo');
   res.render('product', {});
 });
 
