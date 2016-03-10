@@ -1,12 +1,12 @@
+
 // Update with your config settings.
 
 // Update with your config settings.
 
 module.exports = {
-
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/galvanize-brews'
+    connection: 'postgres://localhost:5432/finewine'
   },
 
   production: {
@@ -15,3 +15,4 @@ module.exports = {
   }
 
 };
+
