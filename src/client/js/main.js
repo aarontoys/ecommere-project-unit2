@@ -53,7 +53,7 @@ $(document).on('ready', function() {
 
 //email validation
 
-  $('form').on('submit', function(){
+  /*$('form').on('submit', function(){
     event.preventDefault();
     var $email = $('input[name="email"]');
     if(validateEmail($email.val())){
@@ -67,6 +67,7 @@ $(document).on('ready', function() {
       $('.well-lg').append('<p class="sucka">Bark, bark bark bark, bark, bark.<br><br>Oh no! Our user needs help entering a valid email address! Thanks, Lassie, you\'re the best.</p>');
     }
   });
+*/
 
   function validateEmail (str) {
     var emailPatten = /^([\w\.\-\+_]+)?\w+@[\w-_]+(\.\w+){1,}$/igm;
@@ -357,15 +358,15 @@ $(document).on('ready', function() {
   });
 
 
-  function stripeResponseHandler(status, response) {
-    if (response.error) {
-      console.log(response.error.message);
-      $('form').append('<p>Your credit card was declined. It sucks to be you</p>')
-    } else {
-      console.log(response.id);
-       window.location = href='/invoice';
-    }
-  }
+  // function stripeResponseHandler(status, response) {
+  //   if (response.error) {
+  //     console.log(response.error.message);
+  //     $('form').append('<p>Your credit card was declined. It sucks to be you</p>')
+  //   } else {
+  //     console.log(response.id);
+  //      window.location = href='/invoice';
+  //   }
+  // }
 
   //Get Invoice if
 
