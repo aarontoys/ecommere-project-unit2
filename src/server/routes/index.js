@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var knex = require('../../../db/knex');
 var stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+var queries = require('../lib/queries');
 
 
 
@@ -94,8 +95,15 @@ router.get('/logout', helpers.ensureAuthenticated, function(req, res, next) {
 
 
 router.get('/product', function(req, res, next) {
-  console.log('yo');
-  res.render('product', {});
+  // console.log('yo');
+  queries.getAllProducts()
+    .then(function (data) {
+      console.log(data);
+      res.render('product', {
+        wines: data
+      });
+    })
+  
 });
 
 
